@@ -2,20 +2,20 @@
 class Excalidocker < Formula
     desc "Rust-based utility to convert docker-compose.yaml files into excalidraw files."
     homepage "https://github.com/etolbakov/excalidocker-rs"
-    version "0.1.7"
+    version "0.1.8"
   
     on_macos do
       if Hardware::CPU.arm?        
-        url "https://github.com/etolbakov/excalidocker-rs/releases/download/0.1.7/excalidocker-darwin-arm64.tgz"
-        sha256 "373bcddf6fa696d74f1ca029f472388a00612bc4cccd9c2a190d0b09442f3183"
+        url "https://github.com/etolbakov/excalidocker-rs/releases/download/0.1.8/excalidocker-darwin-arm64.tgz"
+        sha256 "1c1c80d7e3d867a3ad8896f350928daf185ff4e44918f6682b9cb085f0d42407"
   
         def install
           bin.install "excalidocker"
         end
       end
       if Hardware::CPU.intel?        
-        url "https://github.com/etolbakov/excalidocker-rs/releases/download/0.1.7/excalidocker-darwin-amd64.tgz"
-        sha256 "0150a2241e09e72734cc137fbd442201edd012898af3fb6770d899403356eb42"
+        url "https://github.com/etolbakov/excalidocker-rs/releases/download/0.1.8/excalidocker-darwin-amd64.tgz"
+        sha256 "07c4d4237265c929b81b3f8a478820a90454f4e70a5bb97a43e480eef0f0c0ab"
   
         def install
           bin.install "excalidocker"
@@ -25,16 +25,16 @@ class Excalidocker < Formula
   
     on_linux do
       if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?        
-        url "https://github.com/etolbakov/excalidocker-rs/releases/download/0.1.7/excalidocker-linux-arm64.tgz"
-        sha256 "54d34b195d1c41230c0dcace9db33f8d12e96aacde303230b12f70e792131fcc"
+        url "https://github.com/etolbakov/excalidocker-rs/releases/download/0.1.8/excalidocker-linux-arm64.tgz"
+        sha256 "862c3f9509b110752118645539e3c319aae3186d4d5aae62217afb6accc395c1"
   
         def install
           bin.install "excalidocker"
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/etolbakov/excalidocker-rs/releases/download/0.1.7/excalidocker-linux-amd64.tgz"
-        sha256 "ce0e8547b4485aa0f181fb702f41b88f848246b157c58d3f54ab45ed685efc48"
+        url "https://github.com/etolbakov/excalidocker-rs/releases/download/0.1.8/excalidocker-linux-amd64.tgz"
+        sha256 "4c71cfdcbb66db051a5c244f0c17c7d3024e8feed7196eafa70e0d7118e968ae"
   
         def install
           bin.install "excalidocker"
